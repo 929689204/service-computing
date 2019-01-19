@@ -64,7 +64,7 @@ func main(){
 1. `$ selpg`，错误用法时提示USAGE
 
 ```
-   $ ./selpg :
+$ ./selpg :
 ./selpg: not enough arguments
 
 USAGE: ./selpg -sstart_page -eend_page [ -f | -llines_per_page ][ -ddest ] [ in_filename ]
@@ -74,7 +74,7 @@ USAGE: ./selpg -sstart_page -eend_page [ -f | -llines_per_page ][ -ddest ] [ in_
 2. `$ selpg -s1 -e2 -l10 input.txt`，将input.txt第一页和第二页输出，每一页10行，终端显示为：
 
 ```
-   $ ./selpg -s1 -e2 -l10 input.txt
+$ ./selpg -s1 -e2 -l10 input.txt
 input file line 1
 input file line 2
 input file line 3
@@ -146,7 +146,7 @@ input file line 30
 5. `selpg -s10 -e20 input.txt 2>error.txt`，不符合标准的信息将被输出至error.txt，终端不显示错误信息，使用`cat error.txt`命令在终端显示error内容：
 
 ```
-   $ selpg -s10 -e20 -l3 input.txt 2>error.txt
+$ selpg -s10 -e20 -l3 input.txt 2>error.txt
 $ cat error.txt 
 bash: selpg: 未找到命令...
 $ ./selpg -s10 -e20 -l3 input.txt 2>error.txt
